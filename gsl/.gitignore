@@ -1,5 +1,4 @@
 .deps
-gsl_*.h
 *.h
 *.la
 .libs
