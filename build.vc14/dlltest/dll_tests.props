@@ -16,7 +16,7 @@
     <Link>
       <GenerateManifest>true</GenerateManifest>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)..\dll\$(PlatformName)\$(ConfigurationName)\gsl.lib;$(SolutionDir)..\dll\$(PlatformName)\$(ConfigurationName)\cblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>"$(TargetPath)" &gt;"$(TargetDir)"/"$(TargetName)".out</Command>

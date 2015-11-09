@@ -18,9 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\rstat\test.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{41F59914-2522-4EEB-8E44-DC531A49B593}</ProjectGuid>
-    <RootNamespace>testintegration</RootNamespace>
+    <ProjectGuid>{8D9EF446-40CA-46F2-AEA0-171060C83036}</ProjectGuid>
+    <RootNamespace>testinterpolation</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -173,10 +176,6 @@
       <AdditionalDependencies>$(SolutionDir)$(PlatformToolset)\$(PlatformName)\lib\gsl-mt.lib;$(SolutionDir)$(PlatformToolset)\$(PlatformName)\lib\cblas-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\integration\test.c" />
-    <ClCompile Include="..\..\..\integration\tests.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

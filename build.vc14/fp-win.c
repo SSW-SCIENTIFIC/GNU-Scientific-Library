@@ -32,12 +32,24 @@ gsl_ieee_set_mode (int precision, int rounding, int exception_mask)
 
 	switch(precision)
     {
-    case GSL_IEEE_SINGLE_PRECISION:		mode |= _PC_24; break;
-    case GSL_IEEE_EXTENDED_PRECISION:	mode |= _PC_64; break;
+    case GSL_IEEE_SINGLE_PRECISION:
+#ifdef _WIN64
+		return GSL_EINVAL;
+#endif
+		mode |= _PC_24;
+		break;
+    case GSL_IEEE_EXTENDED_PRECISION:
+#ifdef _WIN64
+		return GSL_EINVAL;
+#endif
+		mode |= _PC_64;
+		break;
     case GSL_IEEE_DOUBLE_PRECISION:
     default:							mode |= _PC_53;
 	}
+#ifndef _WIN64
 	mask |= _MCW_PC;
+#endif
 
 	switch(rounding)
     {

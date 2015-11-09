@@ -29,24 +29,28 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
+    <UseIntelMKL>Parallel</UseIntelMKL>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
+    <UseIntelMKL>Parallel</UseIntelMKL>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
+    <UseIntelMKL>Parallel</UseIntelMKL>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
+    <UseIntelMKL>Parallel</UseIntelMKL>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -116,7 +120,7 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(OutDir)cblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>
@@ -161,7 +165,7 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(OutDir)cblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>
@@ -208,7 +212,7 @@
       <ResourceOutputFileName>gsl.res</ResourceOutputFileName>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(OutDir)cblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerbose</ShowProgress>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -256,7 +260,7 @@
       <ResourceOutputFileName>gsl.res</ResourceOutputFileName>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(OutDir)cblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerbose</ShowProgress>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -288,8 +292,17 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)integration\</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)integration\</ObjectFileName>
     </ClCompile>
+    <ClCompile Include="..\..\interpolation\bicubic.c" />
+    <ClCompile Include="..\..\interpolation\bilinear.c" />
+    <ClCompile Include="..\..\interpolation\interp2d.c" />
+    <ClCompile Include="..\..\interpolation\spline2d.c" />
+    <ClCompile Include="..\..\interpolation\steffen.c" />
+    <ClCompile Include="..\..\multifit\fdfridge.c" />
     <ClCompile Include="..\..\multifit\fdjac.c" />
+    <ClCompile Include="..\..\multifit\lmniel.c" />
+    <ClCompile Include="..\..\multifit\multireg.c" />
     <ClCompile Include="..\..\multifit\multirobust.c" />
+    <ClCompile Include="..\..\multifit\multiwlinear.c" />
     <ClCompile Include="..\..\multifit\robust_wfun.c" />
     <ClCompile Include="..\..\multiset\file.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)multiset\</ObjectFileName>
@@ -412,6 +425,21 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)ode2\</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\rng\inline.c" />
+    <ClCompile Include="..\..\rstat\rquantile.c" />
+    <ClCompile Include="..\..\rstat\rstat.c" />
+    <ClCompile Include="..\..\spblas\spdgemm.c" />
+    <ClCompile Include="..\..\spblas\spdgemv.c" />
+    <ClCompile Include="..\..\specfunc\legendre_P.c" />
+    <ClCompile Include="..\..\splinalg\gmres.c" />
+    <ClCompile Include="..\..\splinalg\itersolve.c" />
+    <ClCompile Include="..\..\spmatrix\avl.c" />
+    <ClCompile Include="..\..\spmatrix\spcompress.c" />
+    <ClCompile Include="..\..\spmatrix\spcopy.c" />
+    <ClCompile Include="..\..\spmatrix\spgetset.c" />
+    <ClCompile Include="..\..\spmatrix\spmatrix.c" />
+    <ClCompile Include="..\..\spmatrix\spoper.c" />
+    <ClCompile Include="..\..\spmatrix\spprop.c" />
+    <ClCompile Include="..\..\spmatrix\spswap.c" />
     <ClCompile Include="..\..\version.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)gsl\</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)gsl\</ObjectFileName>
