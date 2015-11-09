@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 14.00
+# Visual Studio 2015
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testbspline", "libtest\testbspline\testbspline.vcxproj", "{1AE0AA4B-417F-4AB7-9519-13C261A3B38A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testcblas", "libtest\testcblas\testcblas.vcxproj", "{6110DE23-ED50-4FD4-BD76-C5587CE45159}"

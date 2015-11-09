@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 14.00
+# Visual Studio 2015
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testblock", "dlltest\testblock\testblock.vcxproj", "{1FF48F83-4A72-4182-9369-DE2AEA0546AB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testbspline", "dlltest\testbspline\testbspline.vcxproj", "{FB831DC1-628F-4291-8469-EFBBCDF6AEB5}"
