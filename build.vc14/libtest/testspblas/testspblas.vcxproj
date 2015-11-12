@@ -18,9 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\spblas\test.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E446FA42-70FB-48EE-9369-6AD83E281D7A}</ProjectGuid>
-    <RootNamespace>testhistogram</RootNamespace>
+    <ProjectGuid>{FDEC665E-2DB5-4E29-A200-9714E1102E7B}</ProjectGuid>
+    <RootNamespace>testderiv</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -176,15 +179,6 @@
       <AdditionalDependencies>$(SolutionDir)$(PlatformToolset)\$(Platform)\lib\libcblas-mt.lib;$(SolutionDir)$(PlatformToolset)\$(Platform)\lib\libgsl-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\histogram\test.c" />
-    <ClCompile Include="..\..\..\histogram\test1d.c" />
-    <ClCompile Include="..\..\..\histogram\test1d_resample.c" />
-    <ClCompile Include="..\..\..\histogram\test1d_trap.c" />
-    <ClCompile Include="..\..\..\histogram\test2d.c" />
-    <ClCompile Include="..\..\..\histogram\test2d_resample.c" />
-    <ClCompile Include="..\..\..\histogram\test2d_trap.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -139,6 +139,18 @@
     <Filter Include="ode2">
       <UniqueIdentifier>{ba3b6ec2-459e-4cfd-95d6-0dfb66ea54ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="rstat">
+      <UniqueIdentifier>{594e6d74-4c84-4518-8a9d-3571bd2a070e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="splinalg">
+      <UniqueIdentifier>{45ed0b5a-1160-47c9-82b9-6e9bcf7beb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spblas">
+      <UniqueIdentifier>{4e3e0a2e-87db-4084-bc24-ae9947e96459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spmatrix">
+      <UniqueIdentifier>{c16dd860-08f8-442f-9ee1-2442c36684bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\blas\blas.c">
@@ -1622,6 +1634,78 @@
     </ClCompile>
     <ClCompile Include="..\..\multifit\robust_wfun.c">
       <Filter>multifit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\specfunc\legendre_P.c">
+      <Filter>specfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multifit\fdfridge.c">
+      <Filter>multifit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multifit\linear_common.c">
+      <Filter>multifit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multifit\multireg.c">
+      <Filter>multifit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multifit\multiwlinear.c">
+      <Filter>multifit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multifit\lmniel.c">
+      <Filter>multifit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\interpolation\interp2d.c">
+      <Filter>interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\interpolation\spline2d.c">
+      <Filter>interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\interpolation\steffen.c">
+      <Filter>interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\interpolation\bicubic.c">
+      <Filter>interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\interpolation\bilinear.c">
+      <Filter>interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spcompress.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spcopy.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spgetset.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spmatrix.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spoper.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spprop.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spmatrix\spswap.c">
+      <Filter>spmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spblas\spdgemm.c">
+      <Filter>spblas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spblas\spdgemv.c">
+      <Filter>spblas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\splinalg\gmres.c">
+      <Filter>splinalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\splinalg\itersolve.c">
+      <Filter>splinalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rstat\rquantile.c">
+      <Filter>rstat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rstat\rstat.c">
+      <Filter>rstat</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
