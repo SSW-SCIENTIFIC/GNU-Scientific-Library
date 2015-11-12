@@ -48,7 +48,7 @@ __BEGIN_DECLS
 
 GSL_FUN gsl_complex gsl_complex_polar (double r, double theta); /* r= r e^(i theta) */
 
-GSL_FUN INLINE_DECL gsl_complex gsl_complex_rect (double x, double y);  /* r= real+i*imag */
+INLINE_DECL gsl_complex gsl_complex_rect (double x, double y);  /* r= real+i*imag */
 
 #ifdef HAVE_INLINE
 INLINE_FUN gsl_complex

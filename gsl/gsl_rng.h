@@ -158,10 +158,10 @@ GSL_FUN void gsl_rng_print_state (const gsl_rng * r);
 
 GSL_FUN const gsl_rng_type * gsl_rng_env_setup (void);
 
-GSL_FUN INLINE_DECL unsigned long int gsl_rng_get (const gsl_rng * r);
-GSL_FUN INLINE_DECL double gsl_rng_uniform (const gsl_rng * r);
-GSL_FUN INLINE_DECL double gsl_rng_uniform_pos (const gsl_rng * r);
-GSL_FUN INLINE_DECL unsigned long int gsl_rng_uniform_int (const gsl_rng * r, unsigned long int n);
+INLINE_DECL unsigned long int gsl_rng_get (const gsl_rng * r);
+INLINE_DECL double gsl_rng_uniform (const gsl_rng * r);
+INLINE_DECL double gsl_rng_uniform_pos (const gsl_rng * r);
+INLINE_DECL unsigned long int gsl_rng_uniform_int (const gsl_rng * r, unsigned long int n);
 
 #ifdef HAVE_INLINE
 

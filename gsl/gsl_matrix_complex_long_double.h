@@ -260,11 +260,11 @@ GSL_FUN int gsl_matrix_complex_long_double_set_col(gsl_matrix_complex_long_doubl
 
 /* inline functions if you are using GCC */
 
-GSL_FUN INLINE_DECL gsl_complex_long_double gsl_matrix_complex_long_double_get(const gsl_matrix_complex_long_double * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL void gsl_matrix_complex_long_double_set(gsl_matrix_complex_long_double * m, const size_t i, const size_t j, const gsl_complex_long_double x);
+INLINE_DECL gsl_complex_long_double gsl_matrix_complex_long_double_get(const gsl_matrix_complex_long_double * m, const size_t i, const size_t j);
+INLINE_DECL void gsl_matrix_complex_long_double_set(gsl_matrix_complex_long_double * m, const size_t i, const size_t j, const gsl_complex_long_double x);
 
-GSL_FUN INLINE_DECL gsl_complex_long_double * gsl_matrix_complex_long_double_ptr(gsl_matrix_complex_long_double * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL const gsl_complex_long_double * gsl_matrix_complex_long_double_const_ptr(const gsl_matrix_complex_long_double * m, const size_t i, const size_t j);
+INLINE_DECL gsl_complex_long_double * gsl_matrix_complex_long_double_ptr(gsl_matrix_complex_long_double * m, const size_t i, const size_t j);
+INLINE_DECL const gsl_complex_long_double * gsl_matrix_complex_long_double_const_ptr(const gsl_matrix_complex_long_double * m, const size_t i, const size_t j);
 
 #ifdef HAVE_INLINE
 

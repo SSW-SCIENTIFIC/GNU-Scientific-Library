@@ -173,10 +173,10 @@ GSL_FUN int gsl_vector_float_ispos (const gsl_vector_float * v);
 GSL_FUN int gsl_vector_float_isneg (const gsl_vector_float * v);
 GSL_FUN int gsl_vector_float_isnonneg (const gsl_vector_float * v);
 
-GSL_FUN INLINE_DECL float gsl_vector_float_get (const gsl_vector_float * v, const size_t i);
-GSL_FUN INLINE_DECL void gsl_vector_float_set (gsl_vector_float * v, const size_t i, float x);
-GSL_FUN INLINE_DECL float * gsl_vector_float_ptr (gsl_vector_float * v, const size_t i);
-GSL_FUN INLINE_DECL const float * gsl_vector_float_const_ptr (const gsl_vector_float * v, const size_t i);
+INLINE_DECL float gsl_vector_float_get (const gsl_vector_float * v, const size_t i);
+INLINE_DECL void gsl_vector_float_set (gsl_vector_float * v, const size_t i, float x);
+INLINE_DECL float * gsl_vector_float_ptr (gsl_vector_float * v, const size_t i);
+INLINE_DECL const float * gsl_vector_float_const_ptr (const gsl_vector_float * v, const size_t i);
 
 #ifdef HAVE_INLINE
 

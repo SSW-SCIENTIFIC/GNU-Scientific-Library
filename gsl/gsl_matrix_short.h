@@ -267,10 +267,10 @@ GSL_FUN int gsl_matrix_short_set_col(gsl_matrix_short * m, const size_t j, const
 
 /* inline functions if you are using GCC */
 
-GSL_FUN INLINE_DECL short   gsl_matrix_short_get(const gsl_matrix_short * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL void    gsl_matrix_short_set(gsl_matrix_short * m, const size_t i, const size_t j, const short x);
-GSL_FUN INLINE_DECL short * gsl_matrix_short_ptr(gsl_matrix_short * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL const short * gsl_matrix_short_const_ptr(const gsl_matrix_short * m, const size_t i, const size_t j);
+INLINE_DECL short   gsl_matrix_short_get(const gsl_matrix_short * m, const size_t i, const size_t j);
+INLINE_DECL void    gsl_matrix_short_set(gsl_matrix_short * m, const size_t i, const size_t j, const short x);
+INLINE_DECL short * gsl_matrix_short_ptr(gsl_matrix_short * m, const size_t i, const size_t j);
+INLINE_DECL const short * gsl_matrix_short_const_ptr(const gsl_matrix_short * m, const size_t i, const size_t j);
 
 #ifdef HAVE_INLINE
 INLINE_FUN 

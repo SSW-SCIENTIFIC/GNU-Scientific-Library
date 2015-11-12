@@ -98,6 +98,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testspmatrix", "dlltest\tes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testspblas", "dlltest\testspblas\testspblas.vcxproj", "{D50AADF6-097A-4FEB-9B0D-8F8ABE03CF5A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testmultilarge", "dlltest\testmultilarge\testmultilarge.vcxproj", "{BDA93830-C4FF-4026-A020-79405D7FB452}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -490,6 +492,14 @@ Global
 		{D50AADF6-097A-4FEB-9B0D-8F8ABE03CF5A}.Release|Win32.Build.0 = Release|Win32
 		{D50AADF6-097A-4FEB-9B0D-8F8ABE03CF5A}.Release|x64.ActiveCfg = Release|x64
 		{D50AADF6-097A-4FEB-9B0D-8F8ABE03CF5A}.Release|x64.Build.0 = Release|x64
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Debug|Win32.Build.0 = Debug|Win32
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Debug|x64.ActiveCfg = Debug|x64
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Debug|x64.Build.0 = Debug|x64
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Release|Win32.ActiveCfg = Release|Win32
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Release|Win32.Build.0 = Release|Win32
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Release|x64.ActiveCfg = Release|x64
+		{BDA93830-C4FF-4026-A020-79405D7FB452}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

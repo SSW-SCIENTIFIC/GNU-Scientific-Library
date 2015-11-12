@@ -260,11 +260,11 @@ GSL_FUN int gsl_matrix_complex_float_set_col(gsl_matrix_complex_float * m, const
 
 /* inline functions if you are using GCC */
 
-GSL_FUN INLINE_DECL gsl_complex_float gsl_matrix_complex_float_get(const gsl_matrix_complex_float * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL void gsl_matrix_complex_float_set(gsl_matrix_complex_float * m, const size_t i, const size_t j, const gsl_complex_float x);
+INLINE_DECL gsl_complex_float gsl_matrix_complex_float_get(const gsl_matrix_complex_float * m, const size_t i, const size_t j);
+INLINE_DECL void gsl_matrix_complex_float_set(gsl_matrix_complex_float * m, const size_t i, const size_t j, const gsl_complex_float x);
 
-GSL_FUN INLINE_DECL gsl_complex_float * gsl_matrix_complex_float_ptr(gsl_matrix_complex_float * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL const gsl_complex_float * gsl_matrix_complex_float_const_ptr(const gsl_matrix_complex_float * m, const size_t i, const size_t j);
+INLINE_DECL gsl_complex_float * gsl_matrix_complex_float_ptr(gsl_matrix_complex_float * m, const size_t i, const size_t j);
+INLINE_DECL const gsl_complex_float * gsl_matrix_complex_float_const_ptr(const gsl_matrix_complex_float * m, const size_t i, const size_t j);
 
 #ifdef HAVE_INLINE
 

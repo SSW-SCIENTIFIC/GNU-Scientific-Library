@@ -78,7 +78,7 @@ GSL_FUN int gsl_combination_valid (gsl_combination * c);
 GSL_FUN int gsl_combination_next (gsl_combination * c);
 GSL_FUN int gsl_combination_prev (gsl_combination * c);
 
-GSL_FUN INLINE_DECL size_t gsl_combination_get (const gsl_combination * c, const size_t i);
+INLINE_DECL size_t gsl_combination_get (const gsl_combination * c, const size_t i);
 
 #ifdef HAVE_INLINE
 

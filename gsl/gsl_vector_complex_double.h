@@ -189,10 +189,10 @@ GSL_FUN int gsl_vector_complex_div (gsl_vector_complex * a, const gsl_vector_com
 GSL_FUN int gsl_vector_complex_scale (gsl_vector_complex * a, const gsl_complex x);
 GSL_FUN int gsl_vector_complex_add_constant (gsl_vector_complex * a, const gsl_complex x);
 
-GSL_FUN INLINE_DECL gsl_complex gsl_vector_complex_get (const gsl_vector_complex * v, const size_t i);
-GSL_FUN INLINE_DECL void gsl_vector_complex_set (gsl_vector_complex * v, const size_t i, gsl_complex z);
-GSL_FUN INLINE_DECL gsl_complex *gsl_vector_complex_ptr (gsl_vector_complex * v, const size_t i);
-GSL_FUN INLINE_DECL const gsl_complex *gsl_vector_complex_const_ptr (const gsl_vector_complex * v, const size_t i);
+INLINE_DECL gsl_complex gsl_vector_complex_get (const gsl_vector_complex * v, const size_t i);
+INLINE_DECL void gsl_vector_complex_set (gsl_vector_complex * v, const size_t i, gsl_complex z);
+INLINE_DECL gsl_complex *gsl_vector_complex_ptr (gsl_vector_complex * v, const size_t i);
+INLINE_DECL const gsl_complex *gsl_vector_complex_const_ptr (const gsl_vector_complex * v, const size_t i);
 
 #ifdef HAVE_INLINE
 

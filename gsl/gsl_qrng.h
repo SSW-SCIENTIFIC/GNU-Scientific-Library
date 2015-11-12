@@ -104,7 +104,7 @@ GSL_FUN void * gsl_qrng_state (const gsl_qrng * q);
 
 
 /* Retrieve next vector in sequence. */
-GSL_FUN INLINE_DECL int gsl_qrng_get (const gsl_qrng * q, double x[]);
+INLINE_DECL int gsl_qrng_get (const gsl_qrng * q, double x[]);
 
 #ifdef HAVE_INLINE
 INLINE_FUN int gsl_qrng_get (const gsl_qrng * q, double x[])

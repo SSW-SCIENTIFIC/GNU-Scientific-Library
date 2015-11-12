@@ -267,10 +267,10 @@ GSL_FUN int gsl_matrix_int_set_col(gsl_matrix_int * m, const size_t j, const gsl
 
 /* inline functions if you are using GCC */
 
-GSL_FUN INLINE_DECL int   gsl_matrix_int_get(const gsl_matrix_int * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL void    gsl_matrix_int_set(gsl_matrix_int * m, const size_t i, const size_t j, const int x);
-GSL_FUN INLINE_DECL int * gsl_matrix_int_ptr(gsl_matrix_int * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL const int * gsl_matrix_int_const_ptr(const gsl_matrix_int * m, const size_t i, const size_t j);
+INLINE_DECL int   gsl_matrix_int_get(const gsl_matrix_int * m, const size_t i, const size_t j);
+INLINE_DECL void    gsl_matrix_int_set(gsl_matrix_int * m, const size_t i, const size_t j, const int x);
+INLINE_DECL int * gsl_matrix_int_ptr(gsl_matrix_int * m, const size_t i, const size_t j);
+INLINE_DECL const int * gsl_matrix_int_const_ptr(const gsl_matrix_int * m, const size_t i, const size_t j);
 
 #ifdef HAVE_INLINE
 INLINE_FUN 

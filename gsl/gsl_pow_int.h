@@ -43,14 +43,14 @@
 
 __BEGIN_DECLS
 
-GSL_FUN INLINE_DECL double gsl_pow_2(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_3(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_4(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_5(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_6(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_7(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_8(const double x);
-GSL_FUN INLINE_DECL double gsl_pow_9(const double x);
+INLINE_DECL double gsl_pow_2(const double x);
+INLINE_DECL double gsl_pow_3(const double x);
+INLINE_DECL double gsl_pow_4(const double x);
+INLINE_DECL double gsl_pow_5(const double x);
+INLINE_DECL double gsl_pow_6(const double x);
+INLINE_DECL double gsl_pow_7(const double x);
+INLINE_DECL double gsl_pow_8(const double x);
+INLINE_DECL double gsl_pow_9(const double x);
 
 #ifdef HAVE_INLINE
 INLINE_FUN double gsl_pow_2(const double x) { return x*x;   }

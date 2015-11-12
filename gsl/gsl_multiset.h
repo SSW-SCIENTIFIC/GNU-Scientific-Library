@@ -79,7 +79,7 @@ GSL_FUN int gsl_multiset_valid (gsl_multiset * c);
 GSL_FUN int gsl_multiset_next (gsl_multiset * c);
 GSL_FUN int gsl_multiset_prev (gsl_multiset * c);
 
-GSL_FUN INLINE_DECL size_t gsl_multiset_get (const gsl_multiset * c, const size_t i);
+INLINE_DECL size_t gsl_multiset_get (const gsl_multiset * c, const size_t i);
 
 #ifdef HAVE_INLINE
 

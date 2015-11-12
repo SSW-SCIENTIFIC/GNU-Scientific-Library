@@ -55,13 +55,13 @@ __BEGIN_DECLS
  */
 
 /* real polynomial, real x */
-GSL_FUN INLINE_DECL double gsl_poly_eval(const double c[], const int len, const double x);
+INLINE_DECL double gsl_poly_eval(const double c[], const int len, const double x);
 
 /* real polynomial, complex x */
-GSL_FUN INLINE_DECL gsl_complex gsl_poly_complex_eval (const double c [], const int len, const gsl_complex z);
+INLINE_DECL gsl_complex gsl_poly_complex_eval (const double c [], const int len, const gsl_complex z);
 
 /* complex polynomial, complex x */
-GSL_FUN INLINE_DECL gsl_complex gsl_complex_poly_complex_eval (const gsl_complex c [], const int len, const gsl_complex z);
+INLINE_DECL gsl_complex gsl_complex_poly_complex_eval (const gsl_complex c [], const int len, const gsl_complex z);
 
 GSL_FUN int gsl_poly_eval_derivs(const double c[], const size_t lenc, const double x, double res[], const size_t lenres);
 
@@ -118,7 +118,7 @@ GSL_FUN int
 gsl_poly_dd_init (double dd[], const double x[], const double y[],
                   size_t size);
 
-GSL_FUN INLINE_DECL double
+INLINE_DECL double
 gsl_poly_dd_eval (const double dd[], const double xa[], const size_t size, const double x);
 
 #ifdef HAVE_INLINE

@@ -151,6 +151,9 @@
     <Filter Include="rstat">
       <UniqueIdentifier>{8afe2c90-0cd6-4967-9686-8ccd1c6008d7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="multilarge">
+      <UniqueIdentifier>{555ee5f8-2a09-4a5f-bd01-875633cdf9f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\blas\blas.c">
@@ -1709,6 +1712,15 @@
     </ClCompile>
     <ClCompile Include="..\..\splinalg\itersolve.c">
       <Filter>splinalg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multilarge\multilarge.c">
+      <Filter>multilarge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multilarge\normal.c">
+      <Filter>multilarge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multilarge\tsqr.c">
+      <Filter>multilarge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

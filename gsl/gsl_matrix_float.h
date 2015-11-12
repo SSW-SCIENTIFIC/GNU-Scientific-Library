@@ -267,10 +267,10 @@ GSL_FUN int gsl_matrix_float_set_col(gsl_matrix_float * m, const size_t j, const
 
 /* inline functions if you are using GCC */
 
-GSL_FUN INLINE_DECL float   gsl_matrix_float_get(const gsl_matrix_float * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL void    gsl_matrix_float_set(gsl_matrix_float * m, const size_t i, const size_t j, const float x);
-GSL_FUN INLINE_DECL float * gsl_matrix_float_ptr(gsl_matrix_float * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL const float * gsl_matrix_float_const_ptr(const gsl_matrix_float * m, const size_t i, const size_t j);
+INLINE_DECL float   gsl_matrix_float_get(const gsl_matrix_float * m, const size_t i, const size_t j);
+INLINE_DECL void    gsl_matrix_float_set(gsl_matrix_float * m, const size_t i, const size_t j, const float x);
+INLINE_DECL float * gsl_matrix_float_ptr(gsl_matrix_float * m, const size_t i, const size_t j);
+INLINE_DECL const float * gsl_matrix_float_const_ptr(const gsl_matrix_float * m, const size_t i, const size_t j);
 
 #ifdef HAVE_INLINE
 INLINE_FUN 

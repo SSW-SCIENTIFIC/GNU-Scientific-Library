@@ -98,6 +98,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testsplinalg", "libtest\tes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testspmatrix", "libtest\testspmatrix\testspmatrix.vcxproj", "{311E9071-9292-49E4-81AE-76830D393CE8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testmultilarge", "libtest\testmultilarge\testmultilarge.vcxproj", "{C1130CD6-854F-4D82-A70B-255C8CE8752E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -490,6 +492,14 @@ Global
 		{311E9071-9292-49E4-81AE-76830D393CE8}.Release|Win32.Build.0 = Release|Win32
 		{311E9071-9292-49E4-81AE-76830D393CE8}.Release|x64.ActiveCfg = Release|x64
 		{311E9071-9292-49E4-81AE-76830D393CE8}.Release|x64.Build.0 = Release|x64
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Debug|Win32.Build.0 = Debug|Win32
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Debug|x64.ActiveCfg = Debug|x64
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Debug|x64.Build.0 = Debug|x64
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Release|Win32.ActiveCfg = Release|Win32
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Release|Win32.Build.0 = Release|Win32
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Release|x64.ActiveCfg = Release|x64
+		{C1130CD6-854F-4D82-A70B-255C8CE8752E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

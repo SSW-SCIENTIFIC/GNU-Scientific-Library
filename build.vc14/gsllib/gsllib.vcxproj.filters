@@ -151,6 +151,9 @@
     <Filter Include="spmatrix">
       <UniqueIdentifier>{c16dd860-08f8-442f-9ee1-2442c36684bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="multilarge">
+      <UniqueIdentifier>{cfd0307f-90a1-4a29-9183-aa5facabe8f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\blas\blas.c">
@@ -1706,6 +1709,15 @@
     </ClCompile>
     <ClCompile Include="..\..\rstat\rstat.c">
       <Filter>rstat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multilarge\multilarge.c">
+      <Filter>multilarge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multilarge\normal.c">
+      <Filter>multilarge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\multilarge\tsqr.c">
+      <Filter>multilarge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

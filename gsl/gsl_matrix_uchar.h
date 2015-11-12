@@ -267,10 +267,10 @@ GSL_FUN int gsl_matrix_uchar_set_col(gsl_matrix_uchar * m, const size_t j, const
 
 /* inline functions if you are using GCC */
 
-GSL_FUN INLINE_DECL unsigned char   gsl_matrix_uchar_get(const gsl_matrix_uchar * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL void    gsl_matrix_uchar_set(gsl_matrix_uchar * m, const size_t i, const size_t j, const unsigned char x);
-GSL_FUN INLINE_DECL unsigned char * gsl_matrix_uchar_ptr(gsl_matrix_uchar * m, const size_t i, const size_t j);
-GSL_FUN INLINE_DECL const unsigned char * gsl_matrix_uchar_const_ptr(const gsl_matrix_uchar * m, const size_t i, const size_t j);
+INLINE_DECL unsigned char   gsl_matrix_uchar_get(const gsl_matrix_uchar * m, const size_t i, const size_t j);
+INLINE_DECL void    gsl_matrix_uchar_set(gsl_matrix_uchar * m, const size_t i, const size_t j, const unsigned char x);
+INLINE_DECL unsigned char * gsl_matrix_uchar_ptr(gsl_matrix_uchar * m, const size_t i, const size_t j);
+INLINE_DECL const unsigned char * gsl_matrix_uchar_const_ptr(const gsl_matrix_uchar * m, const size_t i, const size_t j);
 
 #ifdef HAVE_INLINE
 INLINE_FUN 

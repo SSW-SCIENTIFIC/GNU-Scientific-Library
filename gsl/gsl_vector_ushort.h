@@ -173,10 +173,10 @@ GSL_FUN int gsl_vector_ushort_ispos (const gsl_vector_ushort * v);
 GSL_FUN int gsl_vector_ushort_isneg (const gsl_vector_ushort * v);
 GSL_FUN int gsl_vector_ushort_isnonneg (const gsl_vector_ushort * v);
 
-GSL_FUN INLINE_DECL unsigned short gsl_vector_ushort_get (const gsl_vector_ushort * v, const size_t i);
-GSL_FUN INLINE_DECL void gsl_vector_ushort_set (gsl_vector_ushort * v, const size_t i, unsigned short x);
-GSL_FUN INLINE_DECL unsigned short * gsl_vector_ushort_ptr (gsl_vector_ushort * v, const size_t i);
-GSL_FUN INLINE_DECL const unsigned short * gsl_vector_ushort_const_ptr (const gsl_vector_ushort * v, const size_t i);
+INLINE_DECL unsigned short gsl_vector_ushort_get (const gsl_vector_ushort * v, const size_t i);
+INLINE_DECL void gsl_vector_ushort_set (gsl_vector_ushort * v, const size_t i, unsigned short x);
+INLINE_DECL unsigned short * gsl_vector_ushort_ptr (gsl_vector_ushort * v, const size_t i);
+INLINE_DECL const unsigned short * gsl_vector_ushort_const_ptr (const gsl_vector_ushort * v, const size_t i);
 
 #ifdef HAVE_INLINE
 

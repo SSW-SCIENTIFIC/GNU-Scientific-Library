@@ -605,9 +605,9 @@ GSL_FUN int gsl_linalg_balance_matrix (gsl_matrix * A, gsl_vector * D);
 GSL_FUN int gsl_linalg_balance_accum (gsl_matrix * A, gsl_vector * D);
 GSL_FUN int gsl_linalg_balance_columns (gsl_matrix * A, gsl_vector * D);
 
-GSL_FUN INLINE_DECL void gsl_linalg_givens (const double a, const double b,
+INLINE_DECL void gsl_linalg_givens (const double a, const double b,
                                     double *c, double *s);
-GSL_FUN INLINE_DECL void gsl_linalg_givens_gv (gsl_vector * v, const size_t i,
+INLINE_DECL void gsl_linalg_givens_gv (gsl_vector * v, const size_t i,
                                        const size_t j, const double c,
                                        const double s);
 

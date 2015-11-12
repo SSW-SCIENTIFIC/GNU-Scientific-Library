@@ -62,9 +62,7 @@ typedef struct
   gsl_vector * t;
   gsl_vector * xt;
   gsl_vector * D;
-
-  gsl_matrix * LTQR;   /* QR decomposition of L^T, p-by-p */
-  gsl_vector * LTtau;  /* Householder scalars for QR of L^T, size p */
+  double rcond;        /* reciprocal condition number */
 } 
 gsl_multifit_linear_workspace;
 
@@ -104,8 +102,7 @@ gsl_multifit_linear_applyW(const gsl_matrix * X,
                            const gsl_vector * w,
                            const gsl_vector * y,
                            gsl_matrix * WX,
-                           gsl_vector * Wy,
-                           gsl_multifit_linear_workspace * work);
+                           gsl_vector * Wy);
 
 GSL_FUN int
 gsl_multifit_linear_stdform1 (const gsl_vector * L,
@@ -125,7 +122,11 @@ gsl_multifit_linear_wstdform1 (const gsl_vector * L,
                                gsl_multifit_linear_workspace * work);
 
 GSL_FUN int
-gsl_multifit_linear_stdform2 (const gsl_matrix * L,
+gsl_multifit_linear_L_decomp (gsl_matrix * L, gsl_vector * tau);
+
+GSL_FUN int
+gsl_multifit_linear_stdform2 (const gsl_matrix * LQR,
+                              const gsl_vector * Ltau,
                               const gsl_matrix * X,
                               const gsl_vector * y,
                               gsl_matrix * Xs,
@@ -134,7 +135,8 @@ gsl_multifit_linear_stdform2 (const gsl_matrix * L,
                               gsl_multifit_linear_workspace * work);
 
 GSL_FUN int
-gsl_multifit_linear_wstdform2 (const gsl_matrix * L,
+gsl_multifit_linear_wstdform2 (const gsl_matrix * LQR,
+                               const gsl_vector * Ltau,
                                const gsl_matrix * X,
                                const gsl_vector * w,
                                const gsl_vector * y,
@@ -150,7 +152,8 @@ gsl_multifit_linear_genform1 (const gsl_vector * L,
                               gsl_multifit_linear_workspace * work);
 
 GSL_FUN int
-gsl_multifit_linear_genform2 (const gsl_matrix * L,
+gsl_multifit_linear_genform2 (const gsl_matrix * LQR,
+                              const gsl_vector * Ltau,
                               const gsl_matrix * X,
                               const gsl_vector * y,
                               const gsl_vector * cs,
@@ -159,7 +162,8 @@ gsl_multifit_linear_genform2 (const gsl_matrix * L,
                               gsl_multifit_linear_workspace * work);
 
 GSL_FUN int
-gsl_multifit_linear_wgenform2 (const gsl_matrix * L,
+gsl_multifit_linear_wgenform2 (const gsl_matrix * LQR,
+                               const gsl_vector * Ltau,
                                const gsl_matrix * X,
                                const gsl_vector * w,
                                const gsl_vector * y,
@@ -231,6 +235,9 @@ GSL_FUN int
 gsl_multifit_linear_est (const gsl_vector * x,
                          const gsl_vector * c,
                          const gsl_matrix * cov, double *y, double *y_err);
+
+GSL_FUN double
+gsl_multifit_linear_rcond (const gsl_multifit_linear_workspace * w);
 
 GSL_FUN int
 gsl_multifit_linear_residuals (const gsl_matrix *X, const gsl_vector *y,

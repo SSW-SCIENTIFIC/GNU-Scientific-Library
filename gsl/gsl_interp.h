@@ -158,7 +158,7 @@ gsl_interp_eval_integ(const gsl_interp * obj,
 GSL_FUN void
 gsl_interp_free(gsl_interp * interp);
 
-GSL_FUN INLINE_DECL size_t
+INLINE_DECL size_t
 gsl_interp_bsearch(const double x_array[], double x,
                    size_t index_lo, size_t index_hi);
 
@@ -204,7 +204,7 @@ gsl_interp_bsearch(const double x_array[], double x,
 }
 #endif
 
-GSL_FUN INLINE_DECL size_t 
+INLINE_DECL size_t 
 gsl_interp_accel_find(gsl_interp_accel * a, const double x_array[], size_t size, double x);
 
 #ifdef HAVE_INLINE

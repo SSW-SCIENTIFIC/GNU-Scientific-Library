@@ -304,6 +304,9 @@
     <ClCompile Include="..\..\multifit\multirobust.c" />
     <ClCompile Include="..\..\multifit\multiwlinear.c" />
     <ClCompile Include="..\..\multifit\robust_wfun.c" />
+    <ClCompile Include="..\..\multilarge\multilarge.c" />
+    <ClCompile Include="..\..\multilarge\normal.c" />
+    <ClCompile Include="..\..\multilarge\tsqr.c" />
     <ClCompile Include="..\..\multiset\file.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)multiset\</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)multiset\</ObjectFileName>
